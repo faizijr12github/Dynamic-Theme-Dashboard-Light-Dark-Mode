@@ -15,9 +15,8 @@ Using a combination of **Bookmarks** and the **Selection Pane**, users can switc
 ##  Objectives
 
 -  Implement a **dual-theme interface** (Light & Dark) using native Power BI features
--  Preserve **filter and data state** across theme switches
 -  Apply **modern UI/UX design patterns** — card layouts, shadow effects, icon-driven navigation
--  Demonstrate advanced use of **Bookmarks, Selection Pane, and transparent overlay buttons**
+-  Demonstrate use of **Navigation buttons**
 
 ---
 
@@ -26,10 +25,7 @@ Using a combination of **Bookmarks** and the **Selection Pane**, users can switc
 | Tool / Feature | Purpose |
 |---|---|
 | **Power BI Desktop** | Dashboard development and design |
-| **Bookmarks** | Capturing and switching between Light and Dark UI states |
-| **Selection Pane** | Managing layer visibility for each theme |
-| **Transparent Buttons** | Overlay triggers for Sun/Moon icon interactions |
-| **DAX** | KPI measures for Sales, Profit, and Customer metrics |
+| **Navigation Buttons** | Overlay triggers for Sun/Moon icon interactions |
 
 ---
 
@@ -43,52 +39,13 @@ Using a combination of **Bookmarks** and the **Selection Pane**, users can switc
 ### 2. Custom Theme Toggle Navigation
 - **Sun icon** triggers the switch to Light Mode
 - **Moon icon** triggers the switch to Dark Mode
-- Toggle buttons use **transparent overlays** placed over the icons — keeping the visual design clean while enabling click interactions
-
-### 3. KPI Tracking
-High-level business metrics visible across both themes:
-
-| KPI | Value |
-|---|---|
-|  **Total Sales** | $29.3M |
-|  **Total Profit** | $12.1M |
-|  **Total Customers** | Tracked across all regions |
-
-### 4. Categorical Analysis
-- **Sales distribution by Occupation** — identifying which customer segments drive the most revenue
-- **Profit margins by Product Category** — Bikes, Accessories, and Clothing compared side by side
-
-### 5. Regional Insights
-- **Customer density breakdown** across global sales territories
-- Highlights dominant and underperforming regions at a glance
 
 ---
-
-## Technical Implementation
-
-### Step 1 — Bookmark States
-Two bookmarks are created, each capturing a different visibility configuration:
-
-| Bookmark | Visible Layers | Hidden Layers |
-|---|---|---|
-| **Dark Mode** | Dark theme visuals | Light theme visuals |
-| **Light Mode** | Light theme visuals | Dark theme visuals |
-
-### Step 2 — Selection Pane Layer Management
-All visual elements are organized into **named groups** within the Selection Pane:
-- `Dark_Layer` — contains all dark-themed backgrounds, cards, and text elements
-- `Light_Layer` — contains all light-themed equivalents
-
-Toggling visibility of these groups via bookmarks produces the full theme switch.
 
 ### Step 3 — Transparent Overlay Buttons
 
 ```
-Sun / Moon Icon Image
-        ↓
-Transparent Button (same size, placed on top)
-        ↓
-Button Action → Trigger Bookmark
+Sun / Moon Icon Image with Action
         ↓
 Theme Switches Instantly
 ```
@@ -123,7 +80,7 @@ This keeps the design clean — no visible buttons cluttering the layout, just i
 
 - Advanced **Bookmark management** — scoping bookmarks to visibility only (not filters or data)
 - **Selection Pane layer organization** for complex multi-state dashboards
-- Using **transparent overlay buttons** to create clean, icon-driven interactions
+- Using **Image with Action** to create clean, icon-driven interactions
 - Applying **UI/UX principles** — contrast, hierarchy, card depth — within Power BI's native canvas
 - Maintaining **visual consistency and legibility** across multiple color themes
 
