@@ -8,7 +8,7 @@
 
 This project demonstrates **advanced UI/UX design principles** in Power BI by implementing a seamless **Light and Dark mode toggle** — a feature typically associated with modern web and mobile applications, now brought natively into a BI report.
 
-Using a combination of **Bookmarks** and the **Selection Pane**, users can switch between visual themes instantly without losing their current filter or slicer state — delivering a polished, app-like experience inside Power BI.
+Using a combination of **Icon Images with Action**, users can switch between visual themes instantly without losing their current filter or slicer state — delivering a polished, app-like experience inside Power BI.
 
 ---
 
@@ -40,24 +40,20 @@ Using a combination of **Bookmarks** and the **Selection Pane**, users can switc
 - **Sun icon** triggers the switch to Light Mode
 - **Moon icon** triggers the switch to Dark Mode
 
----
-
-### Step 3 — Transparent Overlay Buttons
-
 ```
-Sun / Moon Icon Image with Action
+Sun / Moon Icon Images with Action
         ↓
 Theme Switches Instantly
 ```
 
 This keeps the design clean — no visible buttons cluttering the layout, just intuitive icon interactions.
 
-### Step 4 — Visual Consistency Across Themes
+### Visual Consistency Across Themes
 - Chart colors (blue sales bars, donut segments) remain **legible and professional** on both backgrounds
 - Color palette tested for **contrast and readability** in both modes
 - **No data or filter state is lost** during the theme transition — bookmarks are scoped to appearance only
 
-### Step 5 — Card Layout with Shadow Effects
+### Card Layout with Shadow Effects
 - Custom **shadow effects** applied to visual containers
 - Creates a modern **"floating card"** aesthetic common in contemporary web and mobile UI
 - Consistent corner rounding and spacing across all cards in both themes
