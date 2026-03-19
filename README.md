@@ -1,6 +1,6 @@
 # Dynamic Theme Dashboard — Light & Dark Mode (Power BI)
 
-> *A fully functional Light/Dark mode toggle built entirely with native Power BI features — no custom visuals, no code, just smart use of Bookmarks and Selection Pane.*
+> *A fully functional Light/Dark mode toggle built entirely with native Power BI features — no custom visuals, no code, just smart use of Icon Images with Action.*
 
 ---
 
